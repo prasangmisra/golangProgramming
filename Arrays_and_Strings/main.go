@@ -30,6 +30,9 @@ optionLoop:
 		case "3":
 			StringURL()
 			break
+		case "4":
+			PalindromePermutation()
+			break
 		default:
 			fmt.Println("Going back")
 			break optionLoop
