@@ -18,7 +18,6 @@ optionLoop:
 			fmt.Println(value)
 		}
 		var option string
-
 		fmt.Scanln(&option)
 		switch option {
 		case "1":
@@ -27,7 +26,6 @@ optionLoop:
 		default:
 			fmt.Println("Nothing selected, bye")
 			break optionLoop
-			//os.Exit(1)
 		}
 	}
 }
