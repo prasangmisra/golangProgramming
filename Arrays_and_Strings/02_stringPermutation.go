@@ -6,12 +6,16 @@ import (
 	"strings"
 )
 
-func FindPermutation() bool {
-	result := true
+func FindPermutationInput() {
 	fmt.Println("Enter 2 strings to check if we have a permutation")
 	var firstString, secondString string
 	fmt.Scanln(&firstString)
 	fmt.Scanln(&secondString)
+	FindPermutation(firstString, secondString)
+
+}
+func FindPermutation(firstString string, secondString string) bool {
+	result := true
 	firstString = SortString(firstString)
 	secondString = SortString(secondString)
 	fmt.Println(firstString)

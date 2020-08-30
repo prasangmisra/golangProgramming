@@ -22,16 +22,16 @@ optionLoop:
 		fmt.Scanln(&option)
 		switch option {
 		case "1":
-			FindUnique()
+			FindUniqueInput()
 			break
 		case "2":
-			FindPermutation()
+			FindPermutationInput()
 			break
 		case "3":
-			StringURL()
+			StringURLInput()
 			break
 		case "4":
-			PalindromePermutation()
+			PalindromePermutationInput()
 			break
 		default:
 			fmt.Println("Going back")
