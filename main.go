@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	arrstr "./Arrays_and_Strings"
+	arrstr "github.com/prasangmisra/golangProgramming/Arrays_and_Strings"
 )
 
 var allFunctions = [3]string{
