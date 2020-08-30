@@ -2,18 +2,16 @@ package main
 
 import (
 	"fmt"
-	"os"
 
 	arrstr "github.com/prasangmisra/golangProgramming/Arrays_and_Strings"
 )
 
-var allFunctions = [3]string{
-	"1: String Unique",
-	"2: String Permutation",
-	"3: String URLify",
+var allFunctions = [1]string{
+	"1: Arrays and Strings",
 }
 
 func main() {
+optionLoop:
 	for {
 		fmt.Println("\n\nSelect a Code:")
 		for _, value := range allFunctions {
@@ -24,17 +22,12 @@ func main() {
 		fmt.Scanln(&option)
 		switch option {
 		case "1":
-			arrstr.FindUnique()
-			break
-		case "2":
-			arrstr.FindPermutation()
-			break
-		case "3":
-			arrstr.StringURL()
+			arrstr.GetOptionsList()
 			break
 		default:
 			fmt.Println("Nothing selected, bye")
-			os.Exit(1)
+			break optionLoop
+			//os.Exit(1)
 		}
 	}
 }
