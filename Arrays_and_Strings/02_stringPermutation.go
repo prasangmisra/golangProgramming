@@ -17,7 +17,7 @@ func FindPermutation() bool {
 	fmt.Println(firstString)
 	fmt.Println(secondString)
 	if len(firstString) == len(secondString) {
-		for key, _ := range firstString {
+		for key := range firstString {
 			if firstString[key] != secondString[key] {
 				result = false
 				break
