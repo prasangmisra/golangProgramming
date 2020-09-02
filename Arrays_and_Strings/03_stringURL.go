@@ -17,5 +17,8 @@ func StringURLInput() {
 	}
 }
 func StringURL(input string) string {
+	if input == " " {
+		return input
+	}
 	return strings.ReplaceAll(input, " ", "%20")
 }

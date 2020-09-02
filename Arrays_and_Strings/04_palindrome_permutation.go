@@ -45,5 +45,4 @@ func PalindromePermutation(input string) bool {
 		return true
 	}
 
-	return false
 }
