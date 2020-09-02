@@ -2,6 +2,8 @@ package Arrays_and_Strings
 
 import "fmt"
 
+// Is Unique: Implement an algorithm to determine if a string has all unique characters. What if you
+// cannot use additional data structures?
 func FindUniqueInput() {
 	fmt.Println("Enter a string and I will tell you if this is unique")
 	var option string

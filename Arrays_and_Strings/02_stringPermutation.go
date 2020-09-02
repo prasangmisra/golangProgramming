@@ -6,6 +6,8 @@ import (
 	"strings"
 )
 
+// Check Permutation: Given two strings, write a method to decide if one is a permutation of the
+// other.
 func FindPermutationInput() {
 	fmt.Println("Enter 2 strings to check if we have a permutation")
 	var firstString, secondString string
