@@ -1,6 +1,9 @@
 package Arrays_and_Strings
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func IsSubstring(first, second string) bool {
 	if len(first) != len(second) {
@@ -19,6 +22,18 @@ func IsSubstring(first, second string) bool {
 	return false
 }
 
+func IsSubstring2(first, second string) bool {
+	if len(first) != len(second) {
+		return false
+	}
+	if len(first) < 2 || len(second) < 2 {
+		return true
+	}
+
+	first = first + first
+	return strings.Contains(first, second)
+
+}
 func RotateStringBy1Bit(input string) string {
 	input = input[1:] + input[:1]
 	fmt.Println(input)

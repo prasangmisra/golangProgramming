@@ -10,3 +10,10 @@ func TestStringRotation(t *testing.T) {
 		t.Errorf("Expected true, got %v", result)
 	}
 }
+
+func TestStringRotation2(t *testing.T) {
+	result := IsSubstring2("waterbottle", "erbottlewat")
+	if !result {
+		t.Errorf("Expected true, got %v", result)
+	}
+}
